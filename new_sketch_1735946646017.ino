@@ -41,8 +41,6 @@ bool notificationTempMinSent = false;
 bool notificationTempMaxSent = false;
 RTC_DS3231 rtc;
 
-unsigned long lastDHTCheck = 0;
-const unsigned long dhtCheckInterval = 5000;
 
 void connectToWiFi() {
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
